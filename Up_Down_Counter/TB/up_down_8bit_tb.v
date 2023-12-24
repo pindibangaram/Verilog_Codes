@@ -40,6 +40,12 @@ endtask
     end
   endtask
 
+initial
+begin
+forever 
+#250 updown = ~updown;
+end
+
   initial
     begin
       $monitor ("load = %d,count = %d",load,count);
