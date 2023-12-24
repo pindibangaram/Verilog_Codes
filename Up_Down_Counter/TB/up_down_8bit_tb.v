@@ -12,9 +12,7 @@ module up_down_8bit_tb();
     end
   
 task initialize;
-  begin
-    {data_in,load,updown,rst} = 11'b00000010010
-  end
+    {data_in,load,updown,rst} = 11'b00000010010;
 endtask
   
   task reset;
